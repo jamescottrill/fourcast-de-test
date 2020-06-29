@@ -1,0 +1,146 @@
+[
+  {
+    "description": "Start date of the trip, for partitioning",
+    "mode": "REQUIRED",
+    "name": "date",
+    "type": "DATE"
+  },
+  {
+    "description": "Unique identifier for the trip.",
+    "mode": "REQUIRED",
+    "name": "unique_key",
+    "type": "STRING"
+  },
+  {
+    "description": "A unique identifier for the taxi.",
+    "mode": "REQUIRED",
+    "name": "taxi_id",
+    "type": "STRING"
+  },
+  {
+    "description": "When the trip started, rounded to the nearest 15 minutes.",
+    "mode": "NULLABLE",
+    "name": "trip_start_timestamp",
+    "type": "TIMESTAMP"
+  },
+  {
+    "description": "When the trip ended, rounded to the nearest 15 minutes.",
+    "mode": "NULLABLE",
+    "name": "trip_end_timestamp",
+    "type": "TIMESTAMP"
+  },
+  {
+    "description": "Time of the trip in seconds.",
+    "mode": "NULLABLE",
+    "name": "trip_seconds",
+    "type": "INTEGER"
+  },
+  {
+    "description": "Distance of the trip in miles.",
+    "mode": "NULLABLE",
+    "name": "trip_miles",
+    "type": "FLOAT"
+  },
+  {
+    "description": "The Census Tract where the trip began. For privacy, this Census Tract is not shown for some trips.",
+    "mode": "NULLABLE",
+    "name": "pickup_census_tract",
+    "type": "INTEGER"
+  },
+  {
+    "description": "The Census Tract where the trip ended. For privacy, this Census Tract is not shown for some trips.",
+    "mode": "NULLABLE",
+    "name": "dropoff_census_tract",
+    "type": "INTEGER"
+  },
+  {
+    "description": "The Community Area where the trip began.",
+    "mode": "NULLABLE",
+    "name": "pickup_community_area",
+    "type": "INTEGER"
+  },
+  {
+    "description": "The Community Area where the trip ended.",
+    "mode": "NULLABLE",
+    "name": "dropoff_community_area",
+    "type": "INTEGER"
+  },
+  {
+    "description": "The fare for the trip.",
+    "mode": "NULLABLE",
+    "name": "fare",
+    "type": "FLOAT"
+  },
+  {
+    "description": "The tip for the trip. Cash tips generally will not be recorded.",
+    "mode": "NULLABLE",
+    "name": "tips",
+    "type": "FLOAT"
+  },
+  {
+    "description": "The tolls for the trip.",
+    "mode": "NULLABLE",
+    "name": "tolls",
+    "type": "FLOAT"
+  },
+  {
+    "description": "Extra charges for the trip.",
+    "mode": "NULLABLE",
+    "name": "extras",
+    "type": "FLOAT"
+  },
+  {
+    "description": "Total cost of the trip, the total of the fare, tips, tolls, and extras.",
+    "mode": "NULLABLE",
+    "name": "trip_total",
+    "type": "FLOAT"
+  },
+  {
+    "description": "Type of payment for the trip.",
+    "mode": "NULLABLE",
+    "name": "payment_type",
+    "type": "STRING"
+  },
+  {
+    "description": "The taxi company.",
+    "mode": "NULLABLE",
+    "name": "company",
+    "type": "STRING"
+  },
+  {
+    "description": "The latitude of the center of the pickup census tract or the community area if the census tract has been hidden for privacy.",
+    "mode": "NULLABLE",
+    "name": "pickup_latitude",
+    "type": "FLOAT"
+  },
+  {
+    "description": "The longitude of the center of the pickup census tract or the community area if the census tract has been hidden for privacy.",
+    "mode": "NULLABLE",
+    "name": "pickup_longitude",
+    "type": "FLOAT"
+  },
+  {
+    "description": "The location of the center of the pickup census tract or the community area if the census tract has been hidden for privacy.",
+    "mode": "NULLABLE",
+    "name": "pickup_location",
+    "type": "STRING"
+  },
+  {
+    "description": "The latitude of the center of the dropoff census tract or the community area if the census tract has been hidden for privacy.",
+    "mode": "NULLABLE",
+    "name": "dropoff_latitude",
+    "type": "FLOAT"
+  },
+  {
+    "description": "The longitude of the center of the dropoff census tract or the community area if the census tract has been hidden for privacy.",
+    "mode": "NULLABLE",
+    "name": "dropoff_longitude",
+    "type": "FLOAT"
+  },
+  {
+    "description": "The location of the center of the dropoff census tract or the community area if the census tract has been hidden for privacy.",
+    "mode": "NULLABLE",
+    "name": "dropoff_location",
+    "type": "STRING"
+  }
+]

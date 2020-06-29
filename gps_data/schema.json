@@ -1,0 +1,38 @@
+[
+  {
+    "description": "A unique identifier for the taxi.",
+    "mode": "NULLABLE",
+    "name": "taxi_id",
+    "type": "STRING"
+  },
+  {
+    "description": "The timestamp at the time the location was sent",
+    "mode": "NULLABLE",
+    "name": "timestamp",
+    "type": "TIMESTAMP"
+  },
+  {
+    "description": "The latitudinal position of the taxi.",
+    "mode": "NULLABLE",
+    "name": "latitude",
+    "type": "FLOAT"
+  },
+  {
+    "description": "The longitudinal position of the taxi.",
+    "mode": "NULLABLE",
+    "name": "longitude",
+    "type": "FLOAT"
+  },
+    {
+    "description": "The location of the taxi.",
+    "mode": "NULLABLE",
+    "name": "location",
+    "type": "STRING"
+  },
+  {
+    "description": "The date of the trip.",
+    "mode": "NULLABLE",
+    "name": "date",
+    "type": "DATE"
+  }
+]
